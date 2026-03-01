@@ -1,0 +1,218 @@
+<section class="section">
+    <div class="container">
+        <div class="form-shell bg-transparent shadow-none p-0">
+            <form id="driverForm" class="driver-form space-y-8" enctype="multipart/form-data">
+                <div class="form-block text-left">
+                    <h2 class="font-display text-xl font-bold tracking-tight text-left">1. Datos personales</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                        <div class="field text-left">
+                            <label for="nombre_apellidos" class="text-left block">Nombre y apellidos</label>
+                            <input class="w-full" id="nombre_apellidos" name="nombre_apellidos" type="text" required=""
+                                placeholder="Ej: Juan Nguema">
+                        </div>
+                        <div class="field text-left">
+                            <label for="telefono" class="text-left block">Teléfono de contacto</label>
+                            <input class="w-full" id="telefono" name="telefono" type="tel" required=""
+                                placeholder="+240 ...">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                        <div class="field text-left">
+                            <label for="email" class="text-left block">Correo electrónico</label>
+                            <input class="w-full" id="email" name="email" type="email" required=""
+                                placeholder="juan@ejemplo.com">
+                        </div>
+                        <div class="field text-left">
+                            <label for="fecha_nacimiento" class="text-left block">Fecha de nacimiento</label>
+                            <input class="w-full" id="fecha_nacimiento" name="fecha_nacimiento" type="date" required="">
+                        </div>
+                    </div>
+
+                    <div class="field text-left">
+                        <label for="direccion_actual" class="text-left block">Dirección en Malabo</label>
+                        <input class="w-full" id="direccion_actual" name="direccion_actual" type="text" required=""
+                            placeholder="Barrio, Calle, Nro">
+                    </div>
+                </div>
+
+                <div class="form-block text-left">
+                    <h2 class="font-display text-xl font-bold tracking-tight text-left">2. Experiencia</h2>
+                    <div class="question text-left">
+                        <p class="text-left">Años de experiencia como conductor profesional</p>
+                        <div class="flex flex-wrap gap-4 mt-2 justify-start">
+                            <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                    name="anos_experiencia" value="0-1" required=""> 0-1 año</label>
+                            <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                    name="anos_experiencia" value="2-3"> 2-3 años</label>
+                            <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                    name="anos_experiencia" value="4-5"> 4-5 años</label>
+                            <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                    name="anos_experiencia" value="5+"> Más de 5 años</label>
+                        </div>
+                    </div>
+
+                    <div class="field mt-6 text-left">
+                        <label for="detalle_plataforma" class="text-left block">Experiencia previa (Taxi, Uber, Empresa,
+                            etc.)</label>
+                        <input class="w-full" id="detalle_plataforma" name="detalle_plataforma" type="text"
+                            placeholder="Describa su experiencia anterior">
+                    </div>
+                </div>
+
+                <div class="form-block text-left">
+                    <h2 class="font-display text-xl font-bold tracking-tight text-left">3. Disponibilidad</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                        <div class="question text-left">
+                            <p class="font-medium mb-2 text-left">¿Cuándo puedes empezar?</p>
+                            <div class="space-y-2 mt-2 text-left">
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="inicio" value="inmediato" required=""> Inmediato</label>
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="inicio" value="1_semana"> En 1 semana</label>
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="inicio" value="otra_fecha"> Otra fecha</label>
+                            </div>
+                        </div>
+                        <div class="question text-left">
+                            <p class="font-medium mb-2 text-left">Horarios disponibles para trabajar:</p>
+                            <div class="grid grid-cols-2 gap-4 mt-2 text-left">
+                                <label class="flex items-center gap-3"><input class="rounded text-blue-600"
+                                        type="checkbox" name="horarios" value="mananas"> Mañanas</label>
+                                <label class="flex items-center gap-3"><input class="rounded text-blue-600"
+                                        type="checkbox" name="horarios" value="tardes"> Tardes</label>
+                                <label class="flex items-center gap-3"><input class="rounded text-blue-600"
+                                        type="checkbox" name="horarios" value="noches"> Noches</label>
+                                <label class="flex items-center gap-3"><input class="rounded text-blue-600"
+                                        type="checkbox" name="horarios" value="fines_semana"> Fines de semana</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question mt-6 text-left">
+                        <p class="font-medium mb-2 text-left">¿Puedes trabajar turnos prolongados si es necesario?</p>
+                        <div class="flex gap-4 justify-start">
+                            <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                    name="turnos_prolongados" value="si" required=""> Sí</label>
+                            <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                    name="turnos_prolongados" value="no"> No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-block text-left">
+                    <h2 class="font-display text-xl font-bold tracking-tight text-left">4. Responsabilidad con el
+                        vehículo</h2>
+                    <p class="text-sm text-neutral-500 mb-4 text-left">(Muy importante porque el coche es de la empresa)
+                    </p>
+
+                    <div class="space-y-6 text-left">
+                        <div class="question text-left">
+                            <p class="font-medium mb-2 text-left">¿Has manejado vehículos de empresa antes?</p>
+                            <div class="flex gap-4 justify-start">
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="vehiculo_empresa" value="si" required=""> Sí</label>
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="vehiculo_empresa" value="no"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="question text-left">
+                            <p class="font-medium mb-2 text-left">¿Alguna vez has tenido un accidente de circulación?
+                            </p>
+                            <div class="space-y-3 text-left">
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="accidente_previo" value="si" required=""> Sí (explicar brevemente)</label>
+                                <textarea
+                                    class="w-full rounded-xl border-none bg-neutral-100 p-4 focus:ring-2 focus:ring-blue-500"
+                                    name="detalle_accidente" rows="2" placeholder="Explique brevemente..."></textarea>
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="accidente_previo" value="no"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="question text-left">
+                            <p class="font-medium mb-2 text-left">¿Estás dispuesto a firmar un contrato de
+                                responsabilidad por daños?</p>
+                            <div class="flex gap-4 justify-start">
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="contrato_responsabilidad" value="si" required=""> Sí</label>
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="contrato_responsabilidad" value="no"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="question text-left">
+                            <p class="font-medium mb-2 text-left">¿Estás dispuesto a seguir las normas de mantenimiento
+                                y limpieza del vehículo?</p>
+                            <div class="flex gap-4 justify-start">
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="normas_mantenimiento" value="si" required=""> Sí</label>
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="normas_mantenimiento" value="no"> No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-block text-left">
+                    <h2 class="font-display text-xl font-bold tracking-tight text-left">5. Seguridad y control</h2>
+                    <div class="space-y-6 text-left">
+                        <div class="question text-left">
+                            <p class="font-medium mb-2 text-left">¿Aceptas la instalación de GPS para control de rutas y
+                                seguridad?</p>
+                            <div class="flex gap-4 justify-start">
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="acepta_gps" value="si" required=""> Sí</label>
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="acepta_gps" value="no"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="question text-left">
+                            <p class="font-medium mb-2 text-left">¿Aceptas los controles de consumo de combustible?</p>
+                            <div class="flex gap-4 justify-start">
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="control_combustible" value="si" required=""> Sí</label>
+                                <label class="flex items-center gap-2"><input class="text-blue-600" type="radio"
+                                        name="control_combustible" value="no"> No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <h2 class="font-display text-xl font-bold tracking-tight text-left">6. Documentación</h2>
+                    <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-6 text-blue-900 text-left">
+                        <p class="font-medium mb-3">Si eres pre-seleccionado, te contactaremos para pedirte los
+                            siguientes documentos:</p>
+                        <ul class="space-y-2 list-disc list-inside opacity-80">
+                            <li>DNI o Pasaporte vigente</li>
+                            <li>Licencia de Conducir profesional</li>
+                            <li>Certificado de Antecedentes penales</li>
+                            <li>Foto reciente tipo carnet</li>
+                        </ul>
+                    </div>
+
+                    <div class="question mt-4 text-left">
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input class="rounded text-blue-600 w-5 h-5" type="checkbox"
+                                name="acepta_documentación_posterior" required="">
+                            <span class="text-lg">Estoy de acuerdo y confirmo que toda la información proporcionada es
+                                verídica.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary w-full justify-center !py-4 !text-lg !font-medium" type="submit">Enviar
+                    Solicitud</button>
+            </form>
+
+            <div class="form-success text-center py-20" id="successMessage" hidden="">
+                <h3 class="text-3xl font-bold mb-4">Solicitud Enviada</h3>
+                <p class="text-neutral-500 text-lg">Gracias por postularte. Nuestro equipo revisará tu documentación y
+                    te contactará en breve.</p>
+                <a href="../" class="btn btn-ghost mt-8">Volver al inicio</a>
+            </div>
+        </div>
+    </div>
+</section>
