@@ -192,7 +192,7 @@ export default function InscripcionPage() {
                         </div>
                         <div className="field">
                             <label htmlFor="detalle_plataforma" className="text-sm font-bold text-neutral-400 mb-1">Experiencia previa (Taxi, Uber, Empresa, etc.)</label>
-                            <input id="detalle_plataforma" name="detalle_plataforma" type="text" placeholder="Describa su experiencia anterior" className="w-full" />
+                            <textarea id="detalle_plataforma" name="detalle_plataforma" rows={2} placeholder="Describa su experiencia anterior" className="w-full resize-none" />
                         </div>
                     </div>
                 </section>
