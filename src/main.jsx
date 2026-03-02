@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
 import { ConvexProvider, ConvexReactClient } from "convex/react";
@@ -10,9 +10,9 @@ const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL);
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <ConvexProvider client={convex}>
-            <HashRouter>
+            <BrowserRouter basename="/okyry-form">
                 <App />
-            </HashRouter>
+            </BrowserRouter>
         </ConvexProvider>
     </React.StrictMode>,
 )
