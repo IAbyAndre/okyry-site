@@ -106,19 +106,19 @@ export default function InscripcionPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="field">
-                            <label htmlFor="nombre_apellidos" className="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1">Nombre y apellidos</label>
+                            <label htmlFor="nombre_apellidos" className="text-sm font-bold text-neutral-400 mb-1">Nombre y apellidos</label>
                             <input id="nombre_apellidos" name="nombre_apellidos" type="text" required placeholder="Ej: Juan Nguema" className="w-full" />
                         </div>
                         <div className="field">
-                            <label htmlFor="telefono" className="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1">Móvil de contacto</label>
+                            <label htmlFor="telefono" className="text-sm font-bold text-neutral-400 mb-1">Móvil de contacto</label>
                             <input id="telefono" name="telefono" type="tel" required placeholder="222 123 456" className="w-full" />
                         </div>
                         <div className="field">
-                            <label htmlFor="email" className="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1">Correo electrónico</label>
+                            <label htmlFor="email" className="text-sm font-bold text-neutral-400 mb-1">Correo electrónico</label>
                             <input id="email" name="email" type="email" required placeholder="juan@ejemplo.com" className="w-full" />
                         </div>
                         <div className="field">
-                            <label htmlFor="fecha_nacimiento" className="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1">Fecha de nacimiento</label>
+                            <label htmlFor="fecha_nacimiento" className="text-sm font-bold text-neutral-400 mb-1">Fecha de nacimiento</label>
                             <input
                                 id="fecha_nacimiento"
                                 name="fecha_nacimiento"
@@ -130,7 +130,7 @@ export default function InscripcionPage() {
                         </div>
                     </div>
                     <div className="field mt-6">
-                        <label htmlFor="direccion_actual" className="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1">Dirección en Malabo</label>
+                        <label htmlFor="direccion_actual" className="text-sm font-bold text-neutral-400 mb-1">Dirección en Malabo</label>
                         <input id="direccion_actual" name="direccion_actual" type="text" required placeholder="Barrio, Calle, Nro" className="w-full" />
                     </div>
                 </section>
@@ -146,7 +146,7 @@ export default function InscripcionPage() {
 
                     <div className="space-y-6">
                         <div>
-                            <p className="text-sm font-semibold text-neutral-600 mb-4 font-bold uppercase tracking-widest">Años de experiencia como conductor profesional</p>
+                            <p className="text-sm font-semibold text-neutral-600 mb-4 font-bold">Años de experiencia como conductor profesional</p>
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                                 {['0-1', '2-3', '4-5', '5+'].map((val) => (
                                     <label key={val} className="flex items-center gap-3 p-4 bg-white rounded-2xl cursor-pointer hover:bg-neutral-50 transition-all border border-neutral-100 has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50">
@@ -157,7 +157,7 @@ export default function InscripcionPage() {
                             </div>
                         </div>
                         <div className="field">
-                            <label htmlFor="detalle_plataforma" className="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1">Experiencia previa (Taxi, Uber, Empresa, etc.)</label>
+                            <label htmlFor="detalle_plataforma" className="text-sm font-bold text-neutral-400 mb-1">Experiencia previa (Taxi, Uber, Empresa, etc.)</label>
                             <input id="detalle_plataforma" name="detalle_plataforma" type="text" placeholder="Describa su experiencia anterior" className="w-full" />
                         </div>
                     </div>
@@ -174,7 +174,7 @@ export default function InscripcionPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         <div>
-                            <p className="text-sm font-semibold text-neutral-600 mb-4 font-bold uppercase tracking-widest">¿Cuándo puedes empezar?</p>
+                            <p className="text-sm font-semibold text-neutral-600 mb-4 font-bold">¿Cuándo puedes empezar?</p>
                             <div className="space-y-3">
                                 {[
                                     { id: 'inmediato', label: 'Inmediato' },
@@ -190,7 +190,7 @@ export default function InscripcionPage() {
                         </div>
 
                         <div>
-                            <p className="text-sm font-semibold text-neutral-600 mb-4 font-bold uppercase tracking-widest">Horarios disponibles:</p>
+                            <p className="text-sm font-semibold text-neutral-600 mb-4 font-bold">Horarios disponibles:</p>
                             <div className="grid grid-cols-2 gap-3">
                                 {[
                                     { id: 'mananas', label: 'Mañanas' },
@@ -208,7 +208,7 @@ export default function InscripcionPage() {
                     </div>
 
                     <div className="mt-8 p-8 bg-neutral-50 rounded-[2rem] border border-neutral-100">
-                        <p className="text-sm font-bold text-neutral-600 mb-6 uppercase tracking-widest">¿Puedes trabajar turnos prolongados si es necesario?</p>
+                        <p className="text-sm font-bold text-neutral-600 mb-6">¿Puedes trabajar turnos prolongados si es necesario?</p>
                         <div className="grid grid-cols-2 gap-4">
                             {['si', 'no'].map((opt) => (
                                 <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -234,7 +234,7 @@ export default function InscripcionPage() {
 
                     <div className="space-y-8">
                         <div className="question-item">
-                            <p className="text-sm font-bold text-neutral-600 mb-4 uppercase tracking-widest">¿Has manejado vehículos de empresa antes?</p>
+                            <p className="text-sm font-bold text-neutral-600 mb-4">¿Has manejado vehículos de empresa antes?</p>
                             <div className="grid grid-cols-2 gap-4">
                                 {['si', 'no'].map((opt) => (
                                     <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -246,7 +246,7 @@ export default function InscripcionPage() {
                         </div>
 
                         <div className="question-item">
-                            <p className="text-sm font-bold text-neutral-600 mb-4 uppercase tracking-widest">¿Alguna vez has tenido un accidente de circulación?</p>
+                            <p className="text-sm font-bold text-neutral-600 mb-4">¿Alguna vez has tenido un accidente de circulación?</p>
                             <div className="space-y-4">
                                 <div className="grid grid-cols-2 gap-4">
                                     <label className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -264,7 +264,7 @@ export default function InscripcionPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <p className="text-sm font-bold text-neutral-600 mb-4 uppercase tracking-widest leading-snug">¿Firma contrato de responsabilidad?</p>
+                                <p className="text-sm font-bold text-neutral-600 mb-4 leading-snug">¿Firma contrato de responsabilidad?</p>
                                 <div className="grid grid-cols-2 gap-4">
                                     {['si', 'no'].map((opt) => (
                                         <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -275,7 +275,7 @@ export default function InscripcionPage() {
                                 </div>
                             </div>
                             <div>
-                                <p className="text-sm font-bold text-neutral-600 mb-4 uppercase tracking-widest leading-snug">¿Seguir normas de mantenimiento?</p>
+                                <p className="text-sm font-bold text-neutral-600 mb-4 leading-snug">¿Seguir normas de mantenimiento?</p>
                                 <div className="grid grid-cols-2 gap-4">
                                     {['si', 'no'].map((opt) => (
                                         <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -300,7 +300,7 @@ export default function InscripcionPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="question-item">
-                            <p className="text-sm font-bold text-neutral-600 mb-4 uppercase tracking-widest">¿Aceptas instalación de GPS?</p>
+                            <p className="text-sm font-bold text-neutral-600 mb-4">¿Aceptas instalación de GPS?</p>
                             <div className="grid grid-cols-2 gap-4">
                                 {['si', 'no'].map((opt) => (
                                     <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -311,7 +311,7 @@ export default function InscripcionPage() {
                             </div>
                         </div>
                         <div className="question-item">
-                            <p className="text-sm font-bold text-neutral-600 mb-4 uppercase tracking-widest">¿Aceptas controles de combustible?</p>
+                            <p className="text-sm font-bold text-neutral-600 mb-4">¿Aceptas controles de combustible?</p>
                             <div className="grid grid-cols-2 gap-4">
                                 {['si', 'no'].map((opt) => (
                                     <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -328,7 +328,7 @@ export default function InscripcionPage() {
                 <section className="form-block">
                     <h2 className="text-xl font-bold mb-6">6. Documentación</h2>
                     <div className="bg-white rounded-2xl p-6 mb-8 border border-neutral-200/50">
-                        <p className="font-bold mb-4 text-blue-600 flex items-center gap-2 uppercase tracking-widest text-xs">
+                        <p className="font-bold mb-4 text-blue-600 flex items-center gap-2 text-xs">
                             <FileText size={16} /> Documentos requeridos (si eres seleccionado)
                         </p>
                         <ul className="space-y-3 text-sm text-neutral-600 font-medium">
