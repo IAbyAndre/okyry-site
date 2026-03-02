@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 export default function InscripcionPage() {
     const [submitted, setSubmitted] = useState(false);
     const [loading, setLoading] = useState(false);
+    const [birthDate, setBirthDate] = useState({ day: '', month: '', year: '' });
     const submitForm = useMutation(api.submissions.submitForm);
 
     const handleSubmit = async (e) => {
@@ -118,14 +119,47 @@ export default function InscripcionPage() {
                             <input id="email" name="email" type="email" required placeholder="juan@ejemplo.com" className="w-full" />
                         </div>
                         <div className="field">
-                            <label htmlFor="fecha_nacimiento" className="text-sm font-bold text-neutral-400 mb-1">Fecha de nacimiento</label>
+                            <label className="text-sm font-bold text-neutral-400 mb-1">Fecha de nacimiento</label>
+                            <div className="grid grid-cols-3 gap-2">
+                                <select
+                                    value={birthDate.day}
+                                    onChange={e => setBirthDate(p => ({ ...p, day: e.target.value }))}
+                                    required
+                                    className="w-full"
+                                >
+                                    <option value="">Día</option>
+                                    {Array.from({ length: 31 }, (_, i) => i + 1).map(d => (
+                                        <option key={d} value={String(d).padStart(2, '0')}>{d}</option>
+                                    ))}
+                                </select>
+                                <select
+                                    value={birthDate.month}
+                                    onChange={e => setBirthDate(p => ({ ...p, month: e.target.value }))}
+                                    required
+                                    className="w-full"
+                                >
+                                    <option value="">Mes</option>
+                                    {['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'].map((m, i) => (
+                                        <option key={m} value={String(i + 1).padStart(2, '0')}>{m}</option>
+                                    ))}
+                                </select>
+                                <select
+                                    value={birthDate.year}
+                                    onChange={e => setBirthDate(p => ({ ...p, year: e.target.value }))}
+                                    required
+                                    className="w-full"
+                                >
+                                    <option value="">Año</option>
+                                    {Array.from({ length: 60 }, (_, i) => 2007 - i).map(y => (
+                                        <option key={y} value={y}>{y}</option>
+                                    ))}
+                                </select>
+                            </div>
                             <input
-                                id="fecha_nacimiento"
+                                type="hidden"
                                 name="fecha_nacimiento"
-                                type="date"
+                                value={birthDate.day && birthDate.month && birthDate.year ? `${birthDate.year}-${birthDate.month}-${birthDate.day}` : ''}
                                 required
-                                className="w-full"
-                                onClick={(e) => e.target.showPicker?.()}
                             />
                         </div>
                     </div>
