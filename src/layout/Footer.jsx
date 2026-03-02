@@ -5,8 +5,8 @@ export default function Footer() {
     return (
         <footer className="bg-neutral-900 text-white pt-20 pb-10">
             <div className="container mx-auto px-6 max-w-7xl">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-                    <div className="col-span-1 md:col-span-1">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                    <div className="col-span-1">
                         <Link to="/" className="flex items-center gap-2 mb-6">
                             <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
                                 O
@@ -30,22 +30,12 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-bold mb-6">Servicios</h4>
+                        <h4 className="font-bold mb-6">Enlaces Rápidos</h4>
                         <ul className="space-y-4 text-neutral-400">
-                            <li><Link to="/clientes" className="hover:text-white transition-colors">Para Clientes</Link></li>
-                            <li><Link to="/empresa" className="hover:text-white transition-colors">Para Empresas</Link></li>
-                            <li><Link to="/empresa/inscripcion" className="hover:text-white transition-colors">Sé un Conductor</Link></li>
-                            <li><Link to="/" className="hover:text-white transition-colors">Flota VIP</Link></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 className="font-bold mb-6">Empresa</h4>
-                        <ul className="space-y-4 text-neutral-400">
+                            <li><Link to="/" className="hover:text-white transition-colors">Inicio</Link></li>
+                            <li><Link to="/inscripcion" className="hover:text-white transition-colors">Unirse al equipo</Link></li>
                             <li><Link to="/" className="hover:text-white transition-colors">Sobre Nosotros</Link></li>
-                            <li><Link to="/empresa/contacto" className="hover:text-white transition-colors">Contacto</Link></li>
                             <li><Link to="/" className="hover:text-white transition-colors">Seguridad</Link></li>
-                            <li><Link to="/" className="hover:text-white transition-colors">Términos y Privacidad</Link></li>
                         </ul>
                     </div>
 

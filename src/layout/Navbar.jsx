@@ -22,9 +22,7 @@ export default function Navbar() {
 
     const navLinks = [
         { name: 'Inicio', path: '/' },
-        { name: 'Clientes', path: '/clientes' },
-        { name: 'Empresa', path: '/empresa' },
-        { name: 'Contacto', path: '/empresa/contacto' },
+        { name: 'Inscripción', path: '/inscripcion' },
     ];
 
     return (
@@ -57,7 +55,7 @@ export default function Navbar() {
                             )}
                         </Link>
                     ))}
-                    <Link to="/empresa/inscripcion" className="btn btn-primary !py-2 !text-sm !rounded-full">
+                    <Link to="/inscripcion" className="btn btn-primary !py-2 !text-sm !rounded-full">
                         Unirse al equipo
                     </Link>
                 </div>
@@ -92,7 +90,7 @@ export default function Navbar() {
                                 </Link>
                             ))}
                             <Link
-                                to="/empresa/inscripcion"
+                                to="/inscripcion"
                                 onClick={() => setIsOpen(false)}
                                 className="btn btn-primary w-full justify-center !rounded-xl"
                             >
