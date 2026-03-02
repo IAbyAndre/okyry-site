@@ -90,7 +90,7 @@ export default function InscripcionPage() {
                     transition={{ delay: 0.2 }}
                     className="text-2xl md:text-4xl text-neutral-400 max-w-4xl leading-tight font-medium"
                 >
-                    Buscamos conductores profesionales para Malabo. Inicia tu proceso ahora.
+                    Buscamos conductores profesionales en Malabo. Convierte tu experiencia en ingresos reales. Asegura tu preselección hoy. Plazas limitadas.
                 </motion.p>
             </div>
 
