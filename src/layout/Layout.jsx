@@ -19,7 +19,7 @@ export default function Layout() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.4, ease: "easeInOut" }}
-                        className="w-full max-w-4xl"
+                        className="w-full max-w-6xl"
                     >
                         <Outlet />
                     </motion.div>

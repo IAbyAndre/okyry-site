@@ -73,12 +73,25 @@ export default function InscripcionPage() {
     }
 
     return (
-        <div className="pb-20 pt-10">
-            <div className="mb-12">
-                <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4 tracking-tight">Únete al equipo de Okyry</h1>
-                <p className="text-xl text-neutral-500 max-w-2xl leading-relaxed">
-                    Buscamos conductores responsables y profesionales para nuestra flota en Malabo. Completa el formulario a continuación para iniciar tu proceso.
-                </p>
+        <div className="pb-32 pt-20">
+            <div className="mb-20">
+                <motion.h1
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    className="text-[3.5rem] md:text-[8rem] font-black text-neutral-900 mb-8 leading-[0.9] tracking-tighter"
+                >
+                    Únete al <br />
+                    <span className="text-blue-600">equipo</span> de <br />
+                    Okyry.
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, x: -30 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="text-2xl md:text-4xl text-neutral-400 max-w-4xl leading-tight font-medium"
+                >
+                    Buscamos conductores profesionales para Malabo. Inicia tu proceso ahora.
+                </motion.p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-8">
