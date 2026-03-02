@@ -251,7 +251,7 @@ export default function InscripcionPage() {
                                         <span className="text-sm font-bold">No</span>
                                     </label>
                                 </div>
-                                <textarea name="detalle_accidente" rows="2" placeholder="Si respondió Sí, explique brevemente..." className="w-full rounded-2xl border-none bg-neutral-100 p-5 focus:ring-2 focus:ring-blue-500 outline-none transition-all text-base font-medium placeholder:text-neutral-400"></textarea>
+                                <textarea name="detalle_accidente" rows="2" placeholder="Si respondió Sí, explique brevemente..." className="w-full rounded-2xl border-none bg-white p-5 focus:ring-2 focus:ring-blue-500 outline-none transition-all text-base font-medium placeholder:text-neutral-400"></textarea>
                             </div>
                         </div>
 
