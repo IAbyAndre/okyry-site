@@ -264,7 +264,7 @@ export default function InscripcionPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <p className="text-sm font-bold text-neutral-400 mb-4 leading-snug">¿Firma contrato de responsabilidad?</p>
+                                <p className="text-sm font-bold text-neutral-400 mb-4 leading-snug">¿Aceptas firmar un contrato de responsabilidad?</p>
                                 <div className="grid grid-cols-2 gap-4">
                                     {['si', 'no'].map((opt) => (
                                         <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -275,7 +275,7 @@ export default function InscripcionPage() {
                                 </div>
                             </div>
                             <div>
-                                <p className="text-sm font-bold text-neutral-400 mb-4 leading-snug">¿Seguir normas de mantenimiento?</p>
+                                <p className="text-sm font-bold text-neutral-400 mb-4 leading-snug">¿Aceptas seguir las normas de mantenimiento?</p>
                                 <div className="grid grid-cols-2 gap-4">
                                     {['si', 'no'].map((opt) => (
                                         <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -329,7 +329,7 @@ export default function InscripcionPage() {
                     <h2 className="text-xl font-bold mb-6">6. Documentación</h2>
                     <div className="bg-white rounded-2xl p-6 mb-8 border border-neutral-200/50">
                         <p className="font-bold mb-4 text-blue-600 flex items-center gap-2 text-xs">
-                            <FileText size={16} /> Documentos requeridos (si eres seleccionado)
+                            <FileText size={16} /> ¡Ya casi terminas! Si eres seleccionado, nuestro equipo se pondrá en contacto contigo para coordinar la documentación necesaria.
                         </p>
                         <ul className="space-y-3 text-sm text-neutral-400 font-medium">
                             <li className="flex items-center gap-3">
