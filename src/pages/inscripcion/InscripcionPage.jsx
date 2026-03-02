@@ -119,7 +119,14 @@ export default function InscripcionPage() {
                         </div>
                         <div className="field">
                             <label htmlFor="fecha_nacimiento" className="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1">Fecha de nacimiento</label>
-                            <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" required className="w-full" />
+                            <input
+                                id="fecha_nacimiento"
+                                name="fecha_nacimiento"
+                                type="date"
+                                required
+                                className="w-full"
+                                onClick={(e) => e.target.showPicker?.()}
+                            />
                         </div>
                     </div>
                     <div className="field mt-6">
