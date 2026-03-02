@@ -372,7 +372,7 @@ export default function InscripcionPage() {
                         </span>
                     ) : (
                         <span className="flex items-center gap-2">
-                            Enviar Solicitud Profesional <ChevronRight className="group-hover:translate-x-1 transition-transform" />
+                            Enviar mis datos <ChevronRight className="group-hover:translate-x-1 transition-transform" />
                         </span>
                     )}
                 </button>
