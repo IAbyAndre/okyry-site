@@ -110,8 +110,8 @@ export default function InscripcionPage() {
                             <input id="nombre_apellidos" name="nombre_apellidos" type="text" required placeholder="Ej: Juan Nguema" className="w-full" />
                         </div>
                         <div className="field">
-                            <label htmlFor="telefono" className="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1">Teléfono de contacto</label>
-                            <input id="telefono" name="telefono" type="tel" required placeholder="+240 ..." className="w-full" />
+                            <label htmlFor="telefono" className="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1">Móvil de contacto</label>
+                            <input id="telefono" name="telefono" type="tel" required placeholder="222 123 456" className="w-full" />
                         </div>
                         <div className="field">
                             <label htmlFor="email" className="text-sm font-bold text-neutral-400 uppercase tracking-widest mb-1">Correo electrónico</label>
