@@ -207,8 +207,8 @@ export default function InscripcionPage() {
                         </div>
                     </div>
 
-                    <div className="mt-8 p-8 bg-neutral-50 rounded-[2rem] border border-neutral-100">
-                        <p className="text-sm font-bold text-neutral-600 mb-6">¿Puedes trabajar turnos prolongados si es necesario?</p>
+                    <div className="question-item mt-8">
+                        <p className="text-sm font-bold text-neutral-600 mb-4">¿Puedes trabajar turnos prolongados si es necesario?</p>
                         <div className="grid grid-cols-2 gap-4">
                             {['si', 'no'].map((opt) => (
                                 <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
