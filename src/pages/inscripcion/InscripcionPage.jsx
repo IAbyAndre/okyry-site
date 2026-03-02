@@ -58,7 +58,7 @@ export default function InscripcionPage() {
                         <CheckCircle2 size={40} />
                     </div>
                     <h1 className="text-3xl font-bold text-neutral-900 mb-4">¡Solicitud Enviada!</h1>
-                    <p className="text-neutral-500 text-lg mb-8">
+                    <p className="text-neutral-400 text-lg mb-8">
                         Gracias por postularte a Okyry. Nuestro equipo revisará tu documentación y te contactará en breve por teléfono o email.
                     </p>
                     <button
@@ -146,7 +146,7 @@ export default function InscripcionPage() {
 
                     <div className="space-y-6">
                         <div>
-                            <p className="text-sm font-semibold text-neutral-600 mb-4 font-bold">Años de experiencia como conductor profesional</p>
+                            <p className="text-sm font-semibold text-neutral-400 mb-4 font-bold">Años de experiencia como conductor profesional</p>
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                                 {['0-1', '2-3', '4-5', '5+'].map((val) => (
                                     <label key={val} className="flex items-center gap-3 p-4 bg-white rounded-2xl cursor-pointer hover:bg-neutral-50 transition-all border border-neutral-100 has-[:checked]:border-blue-600 has-[:checked]:bg-blue-50">
@@ -174,7 +174,7 @@ export default function InscripcionPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         <div>
-                            <p className="text-sm font-semibold text-neutral-600 mb-4 font-bold">¿Cuándo puedes empezar?</p>
+                            <p className="text-sm font-semibold text-neutral-400 mb-4 font-bold">¿Cuándo puedes empezar?</p>
                             <div className="space-y-3">
                                 {[
                                     { id: 'inmediato', label: 'Inmediato' },
@@ -190,7 +190,7 @@ export default function InscripcionPage() {
                         </div>
 
                         <div>
-                            <p className="text-sm font-semibold text-neutral-600 mb-4 font-bold">Horarios disponibles:</p>
+                            <p className="text-sm font-semibold text-neutral-400 mb-4 font-bold">Horarios disponibles:</p>
                             <div className="grid grid-cols-2 gap-3">
                                 {[
                                     { id: 'mananas', label: 'Mañanas' },
@@ -208,7 +208,7 @@ export default function InscripcionPage() {
                     </div>
 
                     <div className="question-item mt-8">
-                        <p className="text-sm font-bold text-neutral-600 mb-4">¿Puedes trabajar turnos prolongados si es necesario?</p>
+                        <p className="text-sm font-bold text-neutral-400 mb-4">¿Puedes trabajar turnos prolongados si es necesario?</p>
                         <div className="grid grid-cols-2 gap-4">
                             {['si', 'no'].map((opt) => (
                                 <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -234,7 +234,7 @@ export default function InscripcionPage() {
 
                     <div className="space-y-8">
                         <div className="question-item">
-                            <p className="text-sm font-bold text-neutral-600 mb-4">¿Has manejado vehículos de empresa antes?</p>
+                            <p className="text-sm font-bold text-neutral-400 mb-4">¿Has manejado vehículos de empresa antes?</p>
                             <div className="grid grid-cols-2 gap-4">
                                 {['si', 'no'].map((opt) => (
                                     <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -246,7 +246,7 @@ export default function InscripcionPage() {
                         </div>
 
                         <div className="question-item">
-                            <p className="text-sm font-bold text-neutral-600 mb-4">¿Alguna vez has tenido un accidente de circulación?</p>
+                            <p className="text-sm font-bold text-neutral-400 mb-4">¿Alguna vez has tenido un accidente de circulación?</p>
                             <div className="space-y-4">
                                 <div className="grid grid-cols-2 gap-4">
                                     <label className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -264,7 +264,7 @@ export default function InscripcionPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <p className="text-sm font-bold text-neutral-600 mb-4 leading-snug">¿Firma contrato de responsabilidad?</p>
+                                <p className="text-sm font-bold text-neutral-400 mb-4 leading-snug">¿Firma contrato de responsabilidad?</p>
                                 <div className="grid grid-cols-2 gap-4">
                                     {['si', 'no'].map((opt) => (
                                         <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -275,7 +275,7 @@ export default function InscripcionPage() {
                                 </div>
                             </div>
                             <div>
-                                <p className="text-sm font-bold text-neutral-600 mb-4 leading-snug">¿Seguir normas de mantenimiento?</p>
+                                <p className="text-sm font-bold text-neutral-400 mb-4 leading-snug">¿Seguir normas de mantenimiento?</p>
                                 <div className="grid grid-cols-2 gap-4">
                                     {['si', 'no'].map((opt) => (
                                         <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -300,7 +300,7 @@ export default function InscripcionPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="question-item">
-                            <p className="text-sm font-bold text-neutral-600 mb-4">¿Aceptas instalación de GPS?</p>
+                            <p className="text-sm font-bold text-neutral-400 mb-4">¿Aceptas instalación de GPS?</p>
                             <div className="grid grid-cols-2 gap-4">
                                 {['si', 'no'].map((opt) => (
                                     <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -311,7 +311,7 @@ export default function InscripcionPage() {
                             </div>
                         </div>
                         <div className="question-item">
-                            <p className="text-sm font-bold text-neutral-600 mb-4">¿Aceptas controles de combustible?</p>
+                            <p className="text-sm font-bold text-neutral-400 mb-4">¿Aceptas controles de combustible?</p>
                             <div className="grid grid-cols-2 gap-4">
                                 {['si', 'no'].map((opt) => (
                                     <label key={opt} className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
@@ -331,7 +331,7 @@ export default function InscripcionPage() {
                         <p className="font-bold mb-4 text-blue-600 flex items-center gap-2 text-xs">
                             <FileText size={16} /> Documentos requeridos (si eres seleccionado)
                         </p>
-                        <ul className="space-y-3 text-sm text-neutral-600 font-medium">
+                        <ul className="space-y-3 text-sm text-neutral-400 font-medium">
                             <li className="flex items-center gap-3">
                                 <ChevronRight size={14} className="text-blue-500" /> DNI o Pasaporte vigente
                             </li>
@@ -351,7 +351,7 @@ export default function InscripcionPage() {
                         <div className="pt-1">
                             <input type="checkbox" name="acepta_documentación_posterior" required className="w-5 h-5 rounded border-neutral-300 bg-white text-blue-600 focus:ring-blue-600" />
                         </div>
-                        <span className="text-sm text-neutral-600 leading-relaxed group-hover:text-neutral-900 transition-colors font-medium">
+                        <span className="text-sm text-neutral-400 leading-relaxed group-hover:text-neutral-900 transition-colors font-medium">
                             Estoy de acuerdo y confirmo que toda la información proporcionada es verídica. Entiendo que la falsificación de datos conlleva la descalificación inmediata.
                         </span>
                     </label>
