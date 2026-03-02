@@ -1,6 +1,4 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './Footer';
 import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -12,9 +10,8 @@ export default function Layout() {
     }, [pathname]);
 
     return (
-        <div className="flex flex-col min-h-screen">
-            <Navbar />
-            <main className="flex-grow">
+        <div className="flex flex-col min-h-screen bg-neutral-50">
+            <main className="flex-grow flex items-center justify-center p-4 md:p-8">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={pathname}
@@ -22,13 +19,12 @@ export default function Layout() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.4, ease: "easeInOut" }}
-                        className="container mx-auto px-6 max-w-7xl pt-32 pb-20"
+                        className="w-full max-w-4xl"
                     >
                         <Outlet />
                     </motion.div>
                 </AnimatePresence>
             </main>
-            <Footer />
         </div>
     );
 }
