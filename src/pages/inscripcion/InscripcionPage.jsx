@@ -8,6 +8,7 @@ export default function InscripcionPage() {
     const [submitted, setSubmitted] = useState(false);
     const [loading, setLoading] = useState(false);
     const [birthDate, setBirthDate] = useState({ day: '', month: '', year: '' });
+    const [accidentePrevio, setAccidentePrevio] = useState('');
     const submitForm = useMutation(api.submissions.submitForm);
 
     const handleSubmit = async (e) => {
@@ -284,15 +285,24 @@ export default function InscripcionPage() {
                             <div className="space-y-4">
                                 <div className="grid grid-cols-2 gap-4">
                                     <label className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
-                                        <input type="radio" name="accidente_previo" value="si" required className="w-4 h-4 text-blue-600" />
+                                        <input type="radio" name="accidente_previo" value="si" required onChange={() => setAccidentePrevio('si')} className="w-4 h-4 text-blue-600" />
                                         <span className="text-sm font-bold">Sí</span>
                                     </label>
                                     <label className="flex items-center justify-center gap-3 p-4 bg-white rounded-2xl border border-neutral-100 hover:bg-neutral-50 cursor-pointer transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-600">
-                                        <input type="radio" name="accidente_previo" value="no" className="w-4 h-4 text-blue-600" />
+                                        <input type="radio" name="accidente_previo" value="no" onChange={() => setAccidentePrevio('no')} className="w-4 h-4 text-blue-600" />
                                         <span className="text-sm font-bold">No</span>
                                     </label>
                                 </div>
-                                <textarea name="detalle_accidente" rows="2" placeholder="Si respondió Sí, explique brevemente..." className="w-full rounded-2xl border-none bg-white p-5 focus:ring-2 focus:ring-blue-500 outline-none transition-all text-base font-medium placeholder:text-neutral-400"></textarea>
+                                <textarea
+                                    name="detalle_accidente"
+                                    rows="2"
+                                    placeholder={accidentePrevio === 'si' ? 'Explique brevemente lo ocurrido...' : 'Seleccione \'Sí\' para añadir detalles...'}
+                                    required={accidentePrevio === 'si'}
+                                    disabled={accidentePrevio !== 'si'}
+                                    className={`w-full rounded-2xl border-none p-5 focus:ring-2 focus:ring-blue-500 outline-none transition-all text-base font-medium placeholder:text-neutral-400 resize-none ${
+                                        accidentePrevio === 'si' ? 'bg-white' : 'bg-neutral-100 cursor-not-allowed opacity-50'
+                                    }`}
+                                />
                             </div>
                         </div>
 
