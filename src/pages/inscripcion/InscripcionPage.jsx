@@ -9,13 +9,28 @@ export default function InscripcionPage() {
     const [loading, setLoading] = useState(false);
     const [birthDate, setBirthDate] = useState({ day: '', month: '', year: '' });
     const [accidentePrevio, setAccidentePrevio] = useState('');
+    const [errors, setErrors] = useState({});
     const submitForm = useMutation(api.submissions.submitForm);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setLoading(true);
 
         const formData = new FormData(e.target);
+        const newErrors = {};
+
+        if (formData.getAll('horarios').length === 0) {
+            newErrors.horarios = 'Selecciona al menos un horario disponible.';
+        }
+
+        if (Object.keys(newErrors).length > 0) {
+            setErrors(newErrors);
+            document.querySelector('[data-error="horarios"]')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return;
+        }
+
+        setErrors({});
+        setLoading(true);
+
         const data = {
             nombre_apellidos: formData.get('nombre_apellidos'),
             telefono: formData.get('telefono'),
@@ -193,7 +208,7 @@ export default function InscripcionPage() {
                         </div>
                         <div className="field">
                             <label htmlFor="detalle_plataforma" className="text-sm font-bold text-neutral-400 mb-1">Experiencia previa (Taxi, Uber, Empresa, etc.)</label>
-                            <textarea id="detalle_plataforma" name="detalle_plataforma" rows={2} placeholder="Describa su experiencia anterior" className="w-full resize-none" />
+                            <textarea id="detalle_plataforma" name="detalle_plataforma" rows={2} required placeholder="Describa su experiencia anterior" className="w-full resize-none" />
                         </div>
                     </div>
                 </section>
@@ -239,6 +254,9 @@ export default function InscripcionPage() {
                                     </label>
                                 ))}
                             </div>
+                            {errors.horarios && (
+                                <p data-error="horarios" className="mt-2 text-xs font-medium text-red-500">{errors.horarios}</p>
+                            )}
                         </div>
                     </div>
 
